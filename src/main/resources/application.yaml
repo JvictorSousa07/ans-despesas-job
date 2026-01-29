@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: ans-despesas-job
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ans_db
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  batch:
+    jdbc:
+      initialize-schema: always
+    job:
+      enabled: false
+
