@@ -2,6 +2,7 @@ spring:
   application:
     name: ans-despesas-job
 
+
   datasource:
     url: jdbc:postgresql://localhost:5432/ans_db
     username: postgres
@@ -22,3 +23,9 @@ spring:
     job:
       enabled: false
 
+ans:
+  api:
+    base-url: https://dadosabertos.ans.gov.br/FTP/PDA/demonstracoes_contabeis/
+
+server:
+  port: 9090
